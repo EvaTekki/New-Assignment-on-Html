@@ -153,12 +153,13 @@ body {
   .section-3 {
     overflow-x: scroll;
     overflow-y: hidden;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
+    height: 400px;
   }
 
   .section-3 h4 {
@@ -172,12 +173,47 @@ body {
 
   .icon {
     width: 30px;
+    margin: auto;
   }
 
   .icons {
     width: 60px;
+    height: 60px;
     background-color: rgb(218, 178, 178);
-    border-radius: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .icons-1 {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(167, 167, 184);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .icons-2 {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(136, 161, 149);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .icons-3 {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(235, 230, 159);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
   }
 
   .title {
@@ -190,20 +226,20 @@ body {
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    width: 25%;
-    background-color: rgb(243, 235, 235);
+    width: 180px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
     border: solid;
     border-width: 1px;
-    border-color: rgb(202, 197, 197);
-    border-radius: 5px;
-    width: 300px;
-    object-fit: contain;
+    border-color: rgb(240, 235, 235);
+    border-radius: 2px;
+    flex-shrink: 0;
+    gap: 15px;
   }
 
 .description {
   width: 100%;
-  white-space: nowrap;
-  object-fit: contain;
+  text-align: center;
 }
   .section-4-header {
     text-align: center;
@@ -243,7 +279,7 @@ body {
   }
 
   .see-more-link {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
 
@@ -257,7 +293,7 @@ body {
 
 
     .section-5 {
-      background-color: rgb(1, 1, 56);
+      background-color:rgb(22, 43, 70);
       display: flex;
       flex-direction: row;
       gap: 10px;
@@ -274,6 +310,7 @@ body {
       flex-direction: column;
       width: 25%;
       align-items: center;
+      gap: 10px;
     }
 
     .section-5-stat {
@@ -281,7 +318,7 @@ body {
       flex-direction: row;
       align-items: center;
       color: white;
-      gap: 10px;
+      gap: 5px;
     }
 
     .section-5 h4, .section-5 h6 {
@@ -298,16 +335,55 @@ body {
 
     .section-6-img {
       width: 100%;
+      height: 100%;
     }
 
     .section-6-right {
       width: 100%;
       display: flex;
       flex-direction: column;
+      padding-right: 12%;
     }
 
     .section-6-left {
       width: 100%;
+      position: relative;
+    }
+
+    .play {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(240, 185, 5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    }
+
+    .playss {
+    width: 55px;
+    height: 55px;
+    background-color: rgb(190, 166, 86);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    }
+
+    .plays {
+      position: absolute;
+      top: 45%;
+      left: 37%;
+      align-items: center;
+      color: white;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .icon-play {
+      width: 15px;
+      margin: auto;
     }
 
     .section-6-right-man {
@@ -322,6 +398,28 @@ body {
       flex-direction: row;
       align-items: center;
     }
+
+.company-name {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.section-6-right-man-right h3 {
+  margin-bottom: 3px;
+  font-size: 20px;
+  margin: 0;
+}
+
+.section-6-right-man-right {
+  font-size: 12px;
+}
+
+.section-6-right-man-left {
+  width: 100px;
+}
 
     @media screen and (min-width: 768px) {
       .section-6{
@@ -347,22 +445,35 @@ body {
         width: 200px;
         object-fit: contain;
         white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
       }
 
       .thumbnail {
-        width: 100%;
+        width: 80%;
+        height: 50%;
+        white-space: nowrap;
       }
 
-      .section-7-name {
+      .section-7-name, .section-7-names {
         font-size: 20px;
         font-weight: bold;
       }
 
-      .section-7 a {
+      .section-7 a, .section-7-names {
         margin-right: 5px;
         font-size: 10px;
       }
 
+      .section-7-names, .section-7-namess {
+        color: rgb(197, 55, 55);
+      }
+      .section-7-names {
+        font-size: 20px;
+        font-weight: bold;
+      }
       .blog-icon {
         width: 15px;
       }
@@ -384,11 +495,15 @@ body {
       }
 
       .section-8 {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 20px;
-        padding: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
       }
 
       .blog-thumbnail {
@@ -396,23 +511,25 @@ body {
       }
 
       .section-8-detials {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 300px;
+        height: 250px;
+        background-color: rgb(255, 255, 255);
+        border: solid;
+        border-width: 1px;
+        border-color: rgb(240, 235, 235);
+        border-radius: 2px;
+        flex-shrink: 0;
+        gap: 15px;
       }
-
-@media screen and (min-width: 768px) {
-  .section-8 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 20px;
-    padding: 30px;
-  }
-}
 
 .footer {
   display: flex;
   flex-direction: row;
-  background-color: rgb(12, 12, 43);
+  background-color: rgb(22, 43, 70);
   justify-content: center;
   width: 100%;
   padding: 10px;
@@ -440,7 +557,7 @@ body {
 }
 
 .footer-2 {
-  background-color: rgb(6, 6, 19);
+  background-color: rgb(25, 38, 57);
   width: 100%;
   font-size: 14px;
   text-align: center;
