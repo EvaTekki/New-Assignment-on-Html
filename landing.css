@@ -542,7 +542,8 @@ body {
 }
 
 .footer-img {
-  width: 15%;
+  width: calc(33.33% - 10px);
+  height: 50px;
 }
 
 .footer-sub-1, .footer-sub-2 {
@@ -551,9 +552,9 @@ body {
 
 .footer-images {
   display: flex;
-  flex-direction: row;
-  flex: 1;
-  white-space: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .footer-2 {
