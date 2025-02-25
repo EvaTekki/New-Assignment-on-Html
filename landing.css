@@ -629,6 +629,11 @@ body {
   color: rgb(255, 166, 0);
 }
 
+.blog-title-stats {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+}
 
 @media screen and (min-width: 1024px) {
   .footer-sub-1, .footer-sub-2 {
